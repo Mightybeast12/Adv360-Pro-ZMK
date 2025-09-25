@@ -29,11 +29,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5       &kp K_COPY                                                          &kp K_PASTE  &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp F     &kp P      &kp G        &lt 1 DOUBLE_QUOTES                                                 &none        &kp J   &kp L   &kp U      &kp Y     &kp SEMI  &kp BSLH
-&kp ESC    &kp A      &kp R     &kp S     &kp T      &hm LCTRL D  &none                &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none        &kp H   &kp N   &kp E      &kp I     &kp O     &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                                        &kp HOME      &kp PG_UP                          &kp K   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 1      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT               &kp ENTER            &kp SPACE  &kp TAB       &kp CAPS   &kp BSPC   &kp DELETE           &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 1
+&kp EQUAL      &kp N1          &kp N2          &kp N3            &kp N4              &kp N5  &kp K_COPY                                                 &kp K_PASTE  &kp N6  &kp N7               &kp N8             &kp N9           &kp N0           &kp MINUS
+&kp C_AC_HOME  &kp Q           &kp W           &kp F             &kp P               &kp G   &mo 1                                                      &mo 3        &kp J   &kp L                &kp U              &kp Y            &kp SEMI         &kp BSLH
+&kp END        &hm LEFT_WIN A  &hm LEFT_ALT R  &hm LEFT_SHIFT S  &hm LEFT_CONTROL T  &kp D   &mo 2       &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &mo 4        &kp H   &hm RIGHT_CONTROL N  &hm RIGHT_SHIFT E  &hm RIGHT_ALT I  &hm RIGHT_WIN O  &kp SQT
+&kp TILDE      &kp Z           &kp X           &kp C             &kp V               &kp B                          &kp TAB       &kp PG_UP                          &kp K   &kp M                &kp COMMA          &kp DOT          &kp FSLH         &kp POUND
+&kp STAR       &kp GRAVE       &kp CAPS        &kp LEFT          &kp RIGHT                   &kp ENTER   &kp SPACE  &kp ESC       &kp CAPS   &kp BSPC   &kp DELETE           &kp UP               &kp DOWN           &kp LBKT         &kp RBKT         &kp PERCENT
             >;
         };
 
