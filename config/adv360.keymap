@@ -41,7 +41,7 @@
             display-name = "Mod";
             bindings = <
 &trans          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans                                                   &trans           &trans  &kp N7        &kp N8        &kp N9  &trans     &trans
-&trans          &trans        &trans        &trans        &trans        &trans        &bootloader                                              &bootloader      &trans  &kp N3        &kp N4        &kp N5  &trans     &trans
+&trans          &trans        &trans        &trans        &trans        &trans        &bootloader                                              &bootloader      &trans  &kp N4        &kp N5        &kp N6  &trans     &trans
 &studio_unlock  &trans        &trans        &trans        &trans        &trans        &trans       &trans  &trans      &bt BT_CLR  &trans      &stp STP_BAT     &trans  &kp NUMBER_1  &kp NUMBER_2  &kp N3  &trans     &trans
 &trans          &trans        &trans        &trans        &macro_ver    &trans                             &trans      &trans                                   &trans  &trans        &kp N0        &trans  &kp ENTER  &kp RSHFT
 &trans          &trans        &trans        &trans        &trans                      &trans       &trans  &trans      &trans      &bl BL_TOG  &rgb_ug RGB_TOG          &bl BL_INC    &bl BL_DEC    &trans  &trans     &trans
