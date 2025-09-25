@@ -29,20 +29,33 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL      &kp N1          &kp N2          &kp N3            &kp N4              &kp N5  &kp K_COPY                                                 &kp K_PASTE  &kp N6  &kp N7               &kp N8             &kp N9           &kp N0           &kp MINUS
-&kp C_AC_HOME  &kp Q           &kp W           &kp F             &kp P               &kp G   &mo 1                                                      &mo 3        &kp J   &kp L                &kp U              &kp Y            &kp SEMI         &kp BSLH
-&kp END        &hm LEFT_WIN A  &hm LEFT_ALT R  &hm LEFT_SHIFT S  &hm LEFT_CONTROL T  &kp D   &mo 2       &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &mo 4        &kp H   &hm RIGHT_CONTROL N  &hm RIGHT_SHIFT E  &hm RIGHT_ALT I  &hm RIGHT_WIN O  &kp SQT
-&kp TILDE      &kp Z           &kp X           &kp C             &kp V               &kp B                          &kp TAB       &kp PG_UP                          &kp K   &kp M                &kp COMMA          &kp DOT          &kp FSLH         &kp POUND
-&kp STAR       &kp GRAVE       &kp CAPS        &kp LEFT_BRACKET  &kp RIGHT_BRACKET           &kp SPACE   &kp ENTER  &kp ESC       &kp CAPS   &kp BSPC   &kp DELETE           &kp LEFT             &kp DOWN           &kp UP           &kp RIGHT        &kp PERCENT
+&kp EQUAL      &kp N1          &kp N2          &kp N3            &kp N4              &kp N5  &kp PRINTSCREEN                                                     &mo 1       &kp N6  &kp N7               &kp N8             &kp N9           &kp N0           &kp MINUS
+&kp C_AC_HOME  &kp Q           &kp W           &kp F             &kp P               &kp G   &mo 1                                                               &mo 3       &kp J   &kp L                &kp U              &kp Y            &kp SEMI         &kp BSLH
+&kp END        &hm LEFT_WIN A  &hm LEFT_ALT R  &hm LEFT_SHIFT S  &hm LEFT_CONTROL T  &kp D   &mo 2            &kp K_COPY  &kp K_PASTE      &kp LGUI   &kp RCTRL  &mo 4       &kp H   &hm RIGHT_CONTROL N  &hm RIGHT_SHIFT E  &hm RIGHT_ALT I  &hm RIGHT_WIN O  &kp SQT
+&kp TILDE      &kp Z           &kp X           &kp C             &kp V               &kp B                                &kp TAB          &kp PG_UP                         &kp K   &kp M                &kp COMMA          &kp DOT          &kp FSLH         &kp POUND
+&kp STAR       &kp GRAVE       &kp CAPS        &kp LEFT_BRACKET  &kp RIGHT_BRACKET           &kp SPACE        &kp ENTER   &kp ESC          &kp CAPS   &kp BSPC   &kp DELETE          &kp LEFT             &kp DOWN           &kp UP           &kp RIGHT        &kp PERCENT
             >;
+        };
+
+        kp {
+            display-name = "Mod";
+            bindings = <
+&trans          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans                                                   &trans           &trans  &kp N7        &kp N8        &kp N9  &trans     &trans
+&trans          &trans        &trans        &trans        &trans        &trans        &bootloader                                              &bootloader      &trans  &kp N3        &kp N4        &kp N5  &trans     &trans
+&studio_unlock  &trans        &trans        &trans        &trans        &trans        &trans       &trans  &trans      &bt BT_CLR  &trans      &stp STP_BAT     &trans  &kp NUMBER_1  &kp NUMBER_2  &kp N3  &trans     &trans
+&trans          &trans        &trans        &trans        &macro_ver    &trans                             &trans      &trans                                   &trans  &trans        &kp N0        &trans  &kp ENTER  &kp RSHFT
+&trans          &trans        &trans        &trans        &trans                      &trans       &trans  &trans      &trans      &bl BL_TOG  &rgb_ug RGB_TOG          &bl BL_INC    &bl BL_DEC    &trans  &trans     &trans
+            >;
+
+            label = "kp";
         };
 
         fn {
             display-name = "Fn";
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 0                                      &mo 2   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 0                                      &mo 1   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
             >;
@@ -51,32 +64,22 @@
         mod {
             display-name = "Mod";
             bindings = <
-&none           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans           &none  &none       &none       &none  &none  &none
-&none           &none         &none         &none         &none         &none         &bootloader                                            &bootloader      &none  &none       &none       &none  &none  &none
-&studio_unlock  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &stp STP_BAT     &none  &none       &none       &none  &none  &none
-&none           &none         &none         &none         &macro_ver    &none                             &none      &none                                    &none  &none       &none       &none  &none  &none
-&none           &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG         &bl BL_INC  &bl BL_DEC  &none  &none  &none
+&trans          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans                                                   &trans           &trans  &kp N7        &kp N8        &kp N9  &trans  &trans
+&trans          &trans        &trans        &trans        &trans        &trans        &bootloader                                              &bootloader      &trans  &kp N3        &kp N4        &kp N5  &trans  &trans
+&studio_unlock  &trans        &trans        &trans        &trans        &trans        &trans       &trans  &trans      &bt BT_CLR  &trans      &stp STP_BAT     &trans  &kp NUMBER_1  &kp NUMBER_2  &kp N3  &trans  &trans
+&trans          &trans        &trans        &trans        &macro_ver    &trans                             &trans      &trans                                   &trans  &trans        &kp N0        &trans  &trans  &trans
+&trans          &trans        &trans        &trans        &trans                      &trans       &trans  &trans      &trans      &bl BL_TOG  &rgb_ug RGB_TOG          &bl BL_INC    &bl BL_DEC    &trans  &trans  &trans
             >;
         };
 
-        extra1 {
-            display-name = "Red";
-            status = "reserved";
-        };
-
-        extra2 {
-            display-name = "Purple";
-            status = "reserved";
-        };
-
-        extra3 {
-            display-name = "Cyan";
-            status = "reserved";
-        };
-
-        extra4 {
-            display-name = "Yellow";
-            status = "reserved";
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans          &trans             &trans           &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp K_MUTE      &kp C_VOLUME_UP    &kp PRINTSCREEN  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp K_PREVIOUS  &kp K_PLAY_PAUSE   &kp K_NEXT       &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans          &kp C_VOLUME_DOWN  &trans           &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans          &trans             &trans                   &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
         };
     };
 };
